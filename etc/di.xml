@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!-- Disable the preprocessors for theme deployment -->
+    <virtualType name="AssetPreProcessorPoolForSourceThemeDeploy"
+                 type="Ubermanu\Magefront\View\Asset\PreProcessor\NullPool">
+    </virtualType>
+
+    <!-- Disable the preprocessors for developer mode -->
+    <virtualType name="AssetPreProcessorPool"
+                 type="Ubermanu\Magefront\View\Asset\PreProcessor\NullPool">
+    </virtualType>
+
+    <!-- Block the deployment of the theme since it's handled by magefront -->
+    <preference for="Magento\Deploy\Package\Package"
+                type="Ubermanu\Magefront\Package\NullPackage"
+    />
+</config>
