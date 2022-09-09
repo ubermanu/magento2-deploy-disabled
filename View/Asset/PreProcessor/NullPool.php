@@ -1,6 +1,6 @@
 <?php
 
-namespace Ubermanu\Magefront\View\Asset\PreProcessor;
+namespace Ubermanu\DeployDisabled\View\Asset\PreProcessor;
 
 use Magento\Framework\View\Asset\PreProcessor\Chain;
 use Magento\Framework\View\Asset\PreProcessor\Pool;

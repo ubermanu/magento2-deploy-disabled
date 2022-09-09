@@ -4,16 +4,16 @@
 
     <!-- Disable the preprocessors for theme deployment -->
     <virtualType name="AssetPreProcessorPoolForSourceThemeDeploy"
-                 type="Ubermanu\Magefront\View\Asset\PreProcessor\NullPool">
+                 type="Ubermanu\DeployDisabled\View\Asset\PreProcessor\NullPool">
     </virtualType>
 
     <!-- Disable the preprocessors for developer mode -->
     <virtualType name="AssetPreProcessorPool"
-                 type="Ubermanu\Magefront\View\Asset\PreProcessor\NullPool">
+                 type="Ubermanu\DeployDisabled\View\Asset\PreProcessor\NullPool">
     </virtualType>
 
-    <!-- Block the deployment of the theme since it's handled by magefront -->
+    <!-- Block the deployment of the theme -->
     <preference for="Magento\Deploy\Package\Package"
-                type="Ubermanu\Magefront\Package\NullPackage"
+                type="Ubermanu\DeployDisabled\Package\NullPackage"
     />
 </config>

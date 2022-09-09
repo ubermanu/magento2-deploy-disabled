@@ -1,6 +1,6 @@
 <?php
 
-namespace Ubermanu\Magefront\Package;
+namespace Ubermanu\DeployDisabled\Package;
 
 use Magento\Deploy\Package\Package;
 use Magento\Deploy\Package\PackageFile;

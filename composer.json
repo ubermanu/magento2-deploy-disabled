@@ -1,5 +1,5 @@
 {
-    "name": "ubermanu/magento2-magefront",
+    "name": "ubermanu/magento2-deploy-disabled",
     "description": "Disable preprocessors and static content deployment from Magento 2",
     "type": "magento2-module",
     "license": "MIT",
@@ -14,7 +14,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Ubermanu\\Magefront\\": ""
+            "Ubermanu\\DeployDisabled\\": ""
         }
     },
     "minimum-stability": "dev",
